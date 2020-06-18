@@ -21,7 +21,7 @@ namespace Lab81
                 string[] str = File.ReadAllLines("C:\\Users\\vladi\\RiderProjects\\Lab81\\NewFile1.txt");
                 double docnumber = Convert.ToDouble(str[i].Substring(0, 20));
                 string Lastname = str[i].Substring(20, 9);
-                string Name =str[i].Substring(30, 10);
+                string Name =str[i].Substring(30, 10); 
                 string Adress = str[i].Substring(40, 19);
                 double Telephone = Convert.ToDouble(str[i].Substring(60, 20));
                 ab.Insert(i,new Abonents(){docnumber = this.docnumber,Lastname = this.Lastname,Name = this.Name,Adress = this.Adress,Telephone = this.Telephone});
